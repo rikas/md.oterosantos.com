@@ -1,4 +1,4 @@
-import Reacr, { useMemo } from 'react';
+import React, { useMemo } from 'react';
 import { useCollection } from '@cloudscape-design/collection-hooks';
 import { Box, Button, Container, Stack, TablePagination, Typography } from '@mui/material';
 
@@ -14,7 +14,7 @@ const ROWS_PER_PAGE = 50;
 const MainPage = () => {
   const ownedGames = useMemo(
     () => games.filter((game) => game.status === GAME_STATUS.FULL),
-    [games]
+    [games],
   );
 
   const percentageComplete = useMemo(() => {
