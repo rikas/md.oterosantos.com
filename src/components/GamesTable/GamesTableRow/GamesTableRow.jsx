@@ -1,3 +1,4 @@
+import React from 'react';
 import { TableCell, TableRow } from '@mui/material';
 import GameId from './GameId';
 import GameBox from './GameBox';

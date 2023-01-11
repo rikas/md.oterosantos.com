@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import React, { useMemo } from 'react';
 import { Typography } from '@mui/material';
 import { GAME_STATUS } from '../../../constants';
 

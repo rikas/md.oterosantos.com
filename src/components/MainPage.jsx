@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import Reacr, { useMemo } from 'react';
 import { useCollection } from '@cloudscape-design/collection-hooks';
 import { Box, Button, Container, Stack, TablePagination, Typography } from '@mui/material';
 

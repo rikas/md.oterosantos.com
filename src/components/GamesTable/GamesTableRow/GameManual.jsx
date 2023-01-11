@@ -1,3 +1,4 @@
+import React from 'react';
 import { Chip } from '@mui/material';
 import { GAME_STATUS, MANUALS } from '../../../constants';
 import EmptyValue from './EmptyValue';
