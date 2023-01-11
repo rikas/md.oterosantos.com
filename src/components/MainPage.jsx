@@ -28,13 +28,7 @@ const MainPage = () => {
   const { items, actions, filteredItemsCount, collectionProps, filterProps, paginationProps } =
     useCollection(games, {
       filtering: {
-        empty: (
-          <EmptyState
-            title="No instances"
-            subtitle="No instances to display."
-            action={<Button variant="outlined">Create instance</Button>}
-          />
-        ),
+        empty: <EmptyState title="No games" subtitle="No games to display." />,
         noMatch: (
           <EmptyState
             title="No matches"
