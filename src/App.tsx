@@ -60,10 +60,12 @@ export default function App(): React.ReactElement {
     <div className="container m-auto py-10 px-4">
       <div className="flex flex-col gap-10">
         <div className="flex flex-col gap-2 items-start">
-          <h1 className="text-3xl md:text-6xl">My Mega Drive Collection</h1>
-          <h5 className="text-lg md:text-2xl text-slate-500 font-light">
-            <span className="font-medium">{percentageComplete}% Complete</span> ({ownedGames.length}{' '}
-            / {games.length})
+          <h1 className="text-3xl md:text-6xl font-headings opacity-80">
+            My Mega Drive Collection
+          </h1>
+          <h5 className="text-lg md:text-2xl text-slate-500 font-extralight">
+            <span className="font-extralight">{percentageComplete}% Complete</span> (
+            {ownedGames.length} / {games.length})
           </h5>
         </div>
 
