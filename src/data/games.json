@@ -827,13 +827,13 @@
   {
     "id": 76,
     "name": "Champions World Class Soccer",
-    "owned": false,
+    "owned": true,
     "notes": null,
-    "box": "no_box",
-    "cartridge": "no_cart",
-    "manual": "no_manual",
+    "box": "box_md_eu",
+    "cartridge": "cart_md_eu",
+    "manual": "manual_md_eu",
     "pt_manual": false,
-    "status": "none"
+    "status": "full"
   },
   {
     "id": 77,
