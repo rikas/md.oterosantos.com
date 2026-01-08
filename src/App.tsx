@@ -64,9 +64,8 @@ export default function App(): React.ReactElement {
             MegaDrive Database
           </h1>
 
-          <h5 className="text-lg md:text-2xl text-slate-500 font-extralight">
-            <span className="font-extralight">{percentageComplete}% Complete</span> (
-            {ownedGames.length} / {games.length})
+          <h5 className="text-lg md:text-2xl text-slate-300 font-extralight">
+            {percentageComplete}% Complete ({ownedGames.length} / {games.length})
           </h5>
         </div>
 

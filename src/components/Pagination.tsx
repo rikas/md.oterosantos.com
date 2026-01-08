@@ -29,7 +29,7 @@ export function Pagination({ currentPageIndex, pagesCount, onChange }: Props): R
 
   return (
     <div className="flex flex-row items-center gap-3 md:gap-4">
-      <span className="text-slate-500">
+      <span className="text-slate-300">
         {currentPageIndex} / {pagesCount}
       </span>
 
