@@ -34,11 +34,23 @@ export function Pagination({ currentPageIndex, pagesCount, onChange }: Props): R
       </span>
 
       <div className="flex flex-row items-center gap-2">
-        <button className={buttonClassNames} onClick={handlePrevious} disabled={isPreviousDisabled}>
+        <button
+          title="Previous page"
+          aria-label="Go to previous page"
+          className={buttonClassNames}
+          onClick={handlePrevious}
+          disabled={isPreviousDisabled}
+        >
           <ChevronLeft strokeWidth={1.3} />
         </button>
 
-        <button className={buttonClassNames} onClick={handleNext} disabled={isNextDisabled}>
+        <button
+          title="Next page"
+          aria-label="Go to next page"
+          className={buttonClassNames}
+          onClick={handleNext}
+          disabled={isNextDisabled}
+        >
           <ChevronRight strokeWidth={1.3} />
         </button>
       </div>

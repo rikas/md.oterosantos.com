@@ -13,6 +13,8 @@ export function SearchInput({ value, onChange }: Props): React.ReactElement {
       </div>
 
       <input
+        id="search"
+        name="search"
         type="search"
         placeholder="Search..."
         value={value}
