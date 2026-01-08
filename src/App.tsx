@@ -59,17 +59,17 @@ export default function App(): React.ReactElement {
   return (
     <div className="container m-auto py-10 px-4">
       <div className="flex flex-col gap-10">
-        <div className="flex flex-col gap-2 items-start">
+        <div className="flex flex-col gap-2 items-start" role="banner">
           <h1 className="bg-clip-text bg-linear-to-br from-blue-100 via-blue-500 to-emerald-400 text-transparent text-3xl md:text-6xl font-headings opacity-80">
             MegaDrive Database
           </h1>
 
-          <h5 className="text-lg md:text-2xl text-slate-300 font-extralight">
+          <h2 className="text-lg md:text-2xl text-slate-300 font-extralight">
             {percentageComplete}% Complete ({ownedGames.length} / {games.length})
-          </h5>
+          </h2>
         </div>
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4" role="main">
           <div className="flex md:hidden">
             <GameStatusFilter activeFilter={filter} onChange={setFilter} />
           </div>

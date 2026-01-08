@@ -26,7 +26,7 @@ export function GameRow({ game }: Props): React.ReactElement {
   const mobileCellClassNames = twJoin(cellClassNames, 'hidden md:table-cell');
 
   return (
-    <tr className={classNames}>
+    <tr className={classNames} aria-disabled={!game.owned}>
       <td className={mobileCellClassNames}>{game.id.toString().padStart(3, '0')}</td>
       <td className={cellClassNames}>
         <div className="flex flex-row gap-1.5 items-center max-w-full md:max-w-90 lg:max-w-none min-w-0">
